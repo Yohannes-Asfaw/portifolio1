@@ -1,0 +1,230 @@
+body {
+  background-color: black;
+  background-image: url(/images/website-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: anime;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25vh 1fr 20vh;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
+}
+li {
+  margin-right: 1em;
+  display: inline;
+}
+
+.link1 {
+  color: rgb(4, 232, 248);
+  text-decoration: none;
+  font-size: 1em;
+  font-family: cursive;
+  font-style: italic;
+}
+.link1:hover {
+  box-shadow: 8px 8px 8px black;
+}
+
+#logo {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: rgb(252, 248, 248);
+  font-family: cursive;
+  font-weight: bolder;
+  text-shadow: black 4px 4px 4px;
+  text-transform: uppercase;
+}
+.visit {
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+  text-shadow: 8px 8px 8px black;
+}
+.visit:hover {
+  box-shadow: 8px 8px 8px black;
+  border: black solid 1px;
+}
+
+.aboutme {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  color: white;
+  font-family: cursive;
+  text-shadow: black 4px 4px 4px;
+}
+.link2 {
+  font-family: cursive;
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  display: block;
+  padding-top: 1vh;
+}
+.link2:hover {
+  box-shadow: 8px 8px 8px black;
+  border: black solid 1px;
+}
+table {
+  width: 40vw;
+  height: 25vw;
+  border: white solid 1px;
+  box-shadow: 8px 8px 8px black;
+}
+th {
+  border: white solid 1px;
+  color: white;
+  font-style: italic;
+  font-family: cursive;
+  text-transform: uppercase;
+  text-shadow: 6px 6px 6px black;
+}
+td {
+  border: white solid 1px;
+  color: white;
+  font-style: italic;
+  font-family: cursive;
+  text-shadow: 6px 6px 6px black;
+  text-align: center;
+}
+.text {
+  font-style: italic;
+  font-family: cursive;
+  color: white;
+}
+
+.media {
+  box-shadow: black 8px 8px 8px;
+  width: 4vw;
+  height: 4vw;
+}
+#logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+h1 {
+  font-family: cursive;
+  font-style: italic;
+  color: white;
+}
+
+.media:hover {
+  transform: scale3d(1.2, 1.2, 0.3);
+  transition: 0.5s;
+}
+.visit-h {
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bolder;
+  color: white;
+  text-shadow: black 8px 8px 8px;
+}
+#activepage {
+  text-decoration: none;
+  font-family: cursive;
+  color: white;
+  border: rgb(13, 199, 255) 1px solid;
+  width: 3em;
+  border-radius: 3px;
+  box-shadow: black 8px 8px 8px;
+  font-style: italic;
+}
+header {
+  display: grid;
+  grid-template-columns: 25vw 70vw;
+  grid-template-rows: 1fr;
+  box-shadow: black 8px 8px 8px;
+}
+main {
+  display: grid;
+  grid-template-columns: 50vw 40vw;
+  grid-template-rows: 1fr;
+  margin-top: 10vh;
+}
+#main-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-sec3 {
+  text-align: right;
+}
+footer {
+  display: grid;
+  grid-template-columns: 35vw 30vw 20vw;
+  grid-template-rows: 1fr;
+  margin-top: 20vh;
+  margin-left: 3vw;
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    display: block;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr 80vh;
+  }
+  header {
+    display: block;
+  }
+
+  footer {
+    display: block;
+    margin-left: 0;
+    width: 93vw;
+  }
+  .media {
+    width: 2em;
+    height: 2em;
+  }
+  .link2 {
+    width: 50vw;
+    text-align: left;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70vh 1fr;
+  }
+  table {
+    width: 85vw;
+    height: 35vh;
+  }
+  td {
+    width: 10vw;
+  }
+  th {
+    width: 20vw;
+  }
+  tr {
+    width: 50vw;
+    font-size: 4vw;
+  }
+  #footer-sec2 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}

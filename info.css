@@ -1,0 +1,247 @@
+body {
+  background-color: black;
+  background-image: url(/images/website-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  animation-name: anime;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30vh 50vh 1fr;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+p {
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+}
+.basiclink {
+  color: rgb(27, 208, 253);
+  font-family: cursive;
+  font-style: italic;
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
+}
+li {
+  margin-right: 1em;
+  display: inline;
+}
+
+.link1 {
+  color: rgb(4, 232, 248);
+  text-decoration: none;
+  font-size: 1em;
+  font-family: cursive;
+  font-style: italic;
+}
+.link1:hover {
+  box-shadow: 8px 8px 8px black;
+}
+h1 {
+  color: rgb(255, 196, 0);
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 5vh;
+  letter-spacing: 2px;
+}
+
+#logo {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: rgb(252, 248, 248);
+  font-family: cursive;
+  font-weight: bolder;
+  text-shadow: black 4px 4px 4px;
+  text-transform: uppercase;
+}
+#logo-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.visit {
+  text-decoration: none;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+  text-shadow: 8px 8px 8px black;
+}
+.visit:hover {
+  box-shadow: 8px 8px 8px black;
+  border: black solid 1px;
+}
+
+.aboutme {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  color: white;
+  font-family: cursive;
+  text-shadow: black 4px 4px 4px;
+}
+.link2 {
+  font-family: cursive;
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  right: 100;
+  display: block;
+  padding-top: 1vh;
+}
+#activepage {
+  text-decoration: none;
+  font-family: cursive;
+  color: white;
+  border: rgb(13, 199, 255) 1px solid;
+  width: 3em;
+  border-radius: 3px;
+  box-shadow: black 8px 8px 8px;
+  font-style: italic;
+}
+.link2:hover {
+  box-shadow: 8px 8px 8px black;
+  border: black solid 1px;
+}
+p {
+  display: block;
+  color: white;
+  font-family: cursive;
+  font-style: italic;
+}
+.main-one {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.main-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-three {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+figcaption {
+  font-family: cursive;
+  font-style: italic;
+  color: white;
+}
+#footer-sec4 {
+  text-align: right;
+}
+
+.media {
+  box-shadow: black 8px 8px 8px;
+  width: 4vw;
+  height: 4vw;
+}
+.media:hover {
+  transform: scale3d(1.2, 1.2, 0.3);
+  transition: 0.5s;
+}
+.visit-h {
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bolder;
+  color: white;
+  text-shadow: black 8px 8px 8px;
+}
+header {
+  display: grid;
+  grid-template-columns: 25vw 70vw;
+  grid-template-rows: 1fr;
+  box-shadow: black 8px 8px 8px;
+}
+main {
+  display: grid;
+  grid-template-columns: 30vw 1fr 30vw;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+#address {
+  width: 15vw;
+  height: 10vw;
+  object-fit: cover;
+}
+footer {
+  display: grid;
+  grid-template-columns: 25vw 25vw 20vw 15vw;
+  grid-template-rows: 1fr;
+  margin-left: 3vw;
+  margin-top: 10vh;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main {
+    display: block;
+    margin-top: 10vh;
+    justify-content: space-between;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 1fr 70vh;
+  }
+  .main-one {
+    text-align: left;
+    justify-content: left;
+  }
+  .main-three {
+    text-align: left;
+    justify-content: left;
+  }
+  figure {
+    margin-left: 0%;
+  }
+  footer {
+    display: block;
+    margin-left: 0;
+    width: 90vw;
+  }
+  .footer-three {
+    margin-top: 10vh;
+    justify-content: left;
+  }
+  #address {
+    width: 40vw;
+    height: 20vh;
+    object-fit: cover;
+  }
+
+  .link2 {
+    text-align: left;
+    margin-top: 0%;
+  }
+  .media {
+    width: 2em;
+    height: 2em;
+  }
+}
